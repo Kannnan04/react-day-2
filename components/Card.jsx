@@ -11,7 +11,7 @@ const Card = ({ Data }) => {
                                 <div class="col">
 
                                     <div class="card">
-                                        
+
                                         <div class="card-body">
                                             <h5 class="card-title">{item.title}</h5>
                                             
@@ -20,10 +20,10 @@ const Card = ({ Data }) => {
                                             <p id='storage'> <i class="fa-solid fa-check"></i> {item.Storage}</p>
                                             <p id='project'> <i class="fa-solid fa-check"></i> {item.project}</p>
                                             <p id='access'> <i class="fa-solid fa-check"></i> {item.access}</p>
-                                            <p id='private'> <i class="fa-solid fa-check"></i> {item.private}</p>
-                                            <p id='phone'> <i class="fa-solid fa-check"></i> {item.phone}</p>
-                                            <p id='subdomain'> <i class="fa-solid fa-check"></i> {item.subdomain}</p>
-                                            <p id='report'> <i class="fa-solid fa-check"></i> {item.report}</p>
+                                            <p id='private'> <i class={item.isprivate?"fa-solid fa-xmark": "fa-solid fa-check"}></i> {item.private}</p>
+                                            <p id='phone'> <i class={item.isprivate?"fa-solid fa-xmark": "fa-solid fa-check"}></i> {item.phone}</p>
+                                            <p id='subdomain'> <i class={item.isprivate?"fa-solid fa-xmark": "fa-solid fa-check"}></i> {item.subdomain}</p>
+                                            <p id='report'> <i class={item.istrue?"fa-solid fa-xmark":"fa-solid fa-check"}></i> {item.report}</p>
                             
                                             <button id='button'>button</button>
                                             

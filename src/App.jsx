@@ -9,10 +9,15 @@ const App = () => {
   project:'Ultimated Public Projects',
   access:'Community Access',
   private:'Ultimated Private Projects',
+  isprivate:true,
   phone:'Dedicated Phone Support',
+  isprivate:true,
   subdomain:'Free Subdomain',
-  report:'Monthly Status Reports'
+  isprivate:true,
+  report:'Monthly Status Reports',
+  istrue:true
   },
+
   {title:'PLUS',
   price:'$9/month',
   user:'5 Users',
@@ -22,7 +27,8 @@ const App = () => {
   private:'Ultimated Private Projects',
   phone:'Dedicated Phone Support',
   subdomain:'Free Subdomain',
-  report:'Monthly Status Reports'
+  report:'Monthly Status Reports',
+  istrue:true
   },
   {title:'PRO',
   price:'$49/month',
